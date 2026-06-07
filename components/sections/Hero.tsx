@@ -3,7 +3,6 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <section className="relative overflow-hidden">
-      {/* 背景装飾 */}
       <div className="absolute top-10 right-10 w-72 h-72 bg-yellow-300 rounded-full blur-3xl opacity-40" />
 
       <div
@@ -12,14 +11,13 @@ export default function Hero() {
         mx-auto
         px-6
         py-32
-        lg:py-32
         grid
         lg:grid-cols-2
         gap-12
         items-center
       "
       >
-        {/* 左側 */}
+        {/* 左 */}
         <div>
           <p className="text-sky-500 font-bold mb-4">
             コーデはAIにおまかせ！
@@ -41,7 +39,7 @@ export default function Hero() {
             楽しもう。
           </h1>
 
-          <p className="mt-8 text-xlleading-relaxed text-gray-600">
+          <p className="mt-8 text-xl leading-relaxed text-gray-600">
             AIがあなたに最適なコーディネートを提案。
             毎朝の服選びをもっと楽しく、もっと簡単に。
           </p>
@@ -59,59 +57,23 @@ export default function Hero() {
             font-bold
             transition
             "
-            >
+          >
             30秒で無料登録
-            </a>
+          </a>
         </div>
 
-        {/* 右側 */}
-        <div className="relative flex justify-center">
-
-        <div
-          className="
-          absolute
-          w-80
-          h-80
-          bg-yellow-300
-          rounded-full
-          -z-10
-          blur-sm
-          "
-        />
-
-        <div
-          className="
-          absolute
-          top-10
-          -right-4
-          w-24
-          h-24
-          bg-sky-300
-          rounded-full
-          -z-10
-          "
-        />
-
-        <Image
-          src="/images/hero-couple.png"
-          alt="AIコーデを利用する男女"
-          width={700}
-          height={900}
-          priority
-          className="
-          w-full
-          max-w-[650px]
-          h-auto
-          object-contain
-          "
-        />
-
+       {/* 右 */}
+        <div className="flex justify-center">
+          <Image
+            src="/images/hero-couple.png"
+            alt="AIコーデを利用する男女"
+            width={700}
+            height={900}
+            priority
+            className="border-4 border-red-500"
+          />
+        </div>
       </div>
-
-            </div>
-                    </div>
-                    </div>
-                </div>
-                </section>
-            );
-            }
+    </section>
+  );
+}
