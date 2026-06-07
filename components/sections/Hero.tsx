@@ -25,12 +25,11 @@ export default function Hero() {
 
           <h1
             className="
-            text-6xl
-            md:text-8xl
+            text-5xl
+            md:text-7xl
             font-black
-            leading-tight
-            tracking-tight
-          "
+            leading-[1.1]
+            "
           >
             迷わず、
             <br />
@@ -63,14 +62,34 @@ export default function Hero() {
         </div>
 
        {/* 右 */}
-        <div className="flex justify-center">
+        <div className="relative flex justify-center lg:justify-end">
+
+          <div
+            className="
+            absolute
+            bottom-10
+            right-0
+            w-[420px]
+            h-[420px]
+            bg-yellow-300
+            rounded-full
+            opacity-70
+            -z-10
+            "
+          />
+
           <Image
             src="/images/hero-couple.png"
             alt="AIコーデを利用する男女"
-            width={700}
-            height={900}
+            width={1000}
+            height={1400}
             priority
-            className="border-4 border-red-500"
+            className="
+            w-full
+            max-w-[900px]
+            h-auto
+            object-contain
+            "
           />
         </div>
       </div>
