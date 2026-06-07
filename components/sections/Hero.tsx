@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Hero() {
   return (
     <section className="relative overflow-hidden">
@@ -20,7 +22,7 @@ export default function Hero() {
         {/* 左側 */}
         <div>
           <p className="text-sky-500 font-bold mb-4">
-            AIコーデ提案サービス
+            コーデはAIにおまかせ！
           </p>
 
           <h1
@@ -58,67 +60,53 @@ export default function Hero() {
             transition
             "
             >
-            無料で試してみる
+            30秒で無料登録
             </a>
         </div>
 
         {/* 右側 */}
-        <div className="flex justify-center">
-          <div
-            className="
-            w-full
-            max-w-md
-            aspect-[4/5]
-            bg-gray-200
-            rounded-[40px]
-            flex
-            items-center
-            justify-center
-            text-gray-500
+        <div className="relative flex justify-center">
+
+        <div
+          className="
+          absolute
+          w-80
+          h-80
+          bg-yellow-300
+          rounded-full
+          -z-10
+          blur-sm
           "
-          >
-           <div className="relative flex justify-center">
+        />
 
-            <div
-                className="
-                absolute
-                w-80
-                h-80
-                bg-yellow-300
-                rounded-full
-                -z-10
-                blur-sm
-                "
-            />
+        <div
+          className="
+          absolute
+          top-10
+          -right-4
+          w-24
+          h-24
+          bg-sky-300
+          rounded-full
+          -z-10
+          "
+        />
 
-            <div
-                className="
-                absolute
-                top-10
-                -right-4
-                w-24
-                h-24
-                bg-sky-300
-                rounded-full
-                -z-10
-                "
-            />
+        <Image
+          src="/images/hero-couple.png"
+          alt="AIコーデを利用する男女"
+          width={700}
+          height={900}
+          priority
+          className="
+          w-full
+          max-w-[650px]
+          h-auto
+          object-contain
+          "
+        />
 
-            <div
-                className="
-                w-full
-                max-w-md
-                aspect-[4/5]
-                rounded-[40px]
-                bg-white
-                shadow-xl
-                flex
-                items-center
-                justify-center
-                "
-            >
-                人物画像を配置
-            </div>
+      </div>
 
             </div>
                     </div>
