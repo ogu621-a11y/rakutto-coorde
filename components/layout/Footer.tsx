@@ -7,7 +7,7 @@ export default function Footer() {
 
           <div>
             <h3 className="text-2xl font-black mb-4">
-              ラクっとコーデ
+              matchstyle
             </h3>
 
             <p className="text-slate-300">
@@ -54,7 +54,7 @@ export default function Footer() {
           text-slate-400
           "
         >
-          © 2026 ラクっとコーデ
+          © 2026 matchstyle
         </div>
 
       </div>

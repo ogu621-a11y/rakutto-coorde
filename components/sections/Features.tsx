@@ -37,7 +37,7 @@ export default function Features() {
           </p>
 
           <h2 className="text-4xl md:text-5xl font-black">
-            ラクっとコーデの特徴
+            matchstyleの特徴
           </h2>
 
         </div>

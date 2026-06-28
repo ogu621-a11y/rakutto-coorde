@@ -36,7 +36,7 @@ export default function CTA() {
         >
           今日から
           <br />
-          ラクっとコーデ
+          matchstyle
         </h2>
 
         <p

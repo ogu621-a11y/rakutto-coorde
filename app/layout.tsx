@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "ラクっとコーデ",
+  title: "matchstyle",
   description:
     "AIがあなたに最適なコーディネートを提案するサービス",
 };
